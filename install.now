@@ -1,0 +1,27 @@
+<?php
+
+echo "Installation Started\n";
+
+include_once('config.php');
+global $adb;
+
+$adb->query('CREATE TABLE vtiger_mc_module(id INT AUTO_INCREMENT PRIMARY KEY, modulename varchar(30), 
+label varchar(50),parent varchar(30), forversion varchar(10), licensetext text, isextension INT(1), version varchar(10))');
+
+$adb->query('CREATE TABLE vtiger_mc_block(id INT AUTO_INCREMENT PRIMARY KEY, moduleid INT, label varchar(30), trlabel varchar(50))');
+
+$adb->query('CREATE TABLE vtiger_mc_table(id INT AUTO_INCREMENT PRIMARY KEY, moduleid INT, tablename varchar(30), tabletype varchar(10), refcolumn varchar(30), sqlquery varchar(400))');
+
+$adb->query('CREATE TABLE vtiger_mc_filter(id INT AUTO_INCREMENT PRIMARY KEY, moduleid INT, filtername varchar(30))');
+$adb->query('CREATE TABLE vtiger_mc_filterfieldrel(filterid INT, fieldid INT, sequence INT)');
+
+$adb->query('CREATE TABLE vtiger_mc_field(id INT AUTO_INCREMENT PRIMARY KEY, 
+moduleid INT, blockid INT, fieldname varchar(30), columnname varchar(30), 
+tableid INT, label varchar(30), trlabel varchar(50),uitype varchar(10),
+displaytype INT, isentityfield INT(1), ismandatory INT(1), infotype varchar(5), helpinfo TEXT, masseditable INT)');
+
+$adb->query('CREATE TABLE vtiger_mc_event(id INT AUTO_INCREMENT PRIMARY KEY, moduleid INT, eventname varchar(30), classname varchar(50), filename text, cond text)');
+
+echo "Installation Completed\n";
+
+?>

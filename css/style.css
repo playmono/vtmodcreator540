@@ -1,0 +1,111 @@
+/*+***********************************************************************************
+ * The contents of this file are subject to the vtiger CRM Public License Version 1.1
+ * ("License"); You may not use this file except in compliance with the License
+ * The Original Code is:  vtiger CRM Open Source
+ * The Initial Developer of the Original Code is vtiger.
+ * Portions created by vtiger are Copyright (C) vtiger.
+ * All Rights Reserved.
+ *************************************************************************************/
+body {
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+}
+table {
+	font: inherit;
+}
+a {
+	color: #0070BA;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font-size: 14px;
+	margin: 0;
+}
+
+h1 a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #33338C;
+}
+
+.small {
+	font-size: 10px;
+}
+.big {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+}
+.required {
+	color: red;
+}
+
+.tableHeading {
+	background: white url(images/level2Bg.gif) repeat-x scroll center bottom;
+	border: 1px solid #DEDEDE;
+}
+.cellLabel {
+	background: #f7f7f7 url(images/tableCell.jpg) repeat-y scroll right center;
+	border: 1px solid #DEDEDE;
+	border-top: 0;
+	color: #545454;
+	padding: 0 5px 0 5px;
+	white-space: nowrap;
+	text-align: right;
+	font-size: 12px;
+}
+.cellText {
+	border: 1px solid #DEDEDE;
+	padding: 4px;
+	font-size: 12px;
+}
+.colHeader {
+	background: #FFFFFF url(images/colheader.gif) repeat-x scroll right center;
+	border: 1px solid #DDDDDD;
+	border-top: 0;
+	color: #545454;
+	white-space: nowrap;
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.dvtUnSelectedCell, .dvtSelectedCell {
+	background: #FFFFFF;
+	border: 1px solid #E0DDDD;
+	border-bottom: 0;	
+	color: black;
+	padding: 2px 20px 4px 20px;
+	font-size: 12px;
+}
+.dvtSelectedCell {
+	background: #FFFFFF url(images/tab.gif) repeat-x scroll center top;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.textBox {
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px solid #BABABA;
+	padding-left: 2px;
+}
+
+.save, .cancel, .create {
+	background: green url(images/green.png);
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: white;
+}
+.cancel {
+	background: orange url(images/orange.png);
+}
+.create {
+	background: blue url(images/blue.png);
+}
