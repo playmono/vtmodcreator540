@@ -45,9 +45,8 @@
 		<td class="cellLabel" width='20%'>For Version</td>
 		<td class="cellText" width='30%'>
 			{literal}
-			<select class='small' name='forversion' onchange="if(this.value=='5.1.0'){this.form.isextension.disabled=false;}else{this.form.isextension.checked=false;this.form.isextension.disabled=true;}">{/literal}
-				<option value='5.0.4'>5.0.4</option>
-				<option value='5.1.0'>5.1.0</option>
+			<select class='small' name='forversion'>{/literal}
+				<option value='5.4.0'>5.4.0</option>
 			</select>
 		</td>
 	</tr>
@@ -57,7 +56,7 @@
 
 		<td class="cellLabel" width='20%'>Is Extension Module?</td>
 		<td class="cellText" width='30%' colspan=3>
-			<input type='checkbox' name='isextension' value='1' disabled=true>
+			<input type='checkbox' name='isextension' value='1'>
 			{literal}<small>Select if CRM Record is not created</small>{/literal}
 		</td>
 	</tr>

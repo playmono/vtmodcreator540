@@ -30,10 +30,8 @@
 			<td style='width: 10px;'></td>
 			<td class='dvtUnSelectedCell'><a href='index.php?action=ListFilter&moduleid={$MODULE->id}'>Filter</a></td>
 			<td style='width: 10px;'></td>
-			{if $MODULE->forversion eq '5.1.0'}
 			<td class='dvtUnSelectedCell'><a href='index.php?action=ListEvent&moduleid={$MODULE->id}'>Event</a></td>
 			<td style='width: 10px;'></td>
-			{/if}
 		</tr>
 		</table>
 	</td>

@@ -30,10 +30,8 @@
 			<td style='width: 10px;'></td>
 			<td class='dvtUnSelectedCell'><a href='index.php?action=ListFilter&moduleid={$MODULE->id}'>Filter</a></td>
 			<td style='width: 10px;'></td>
-			{if $MODULE->forversion eq '5.1.0'}
 			<td class='dvtUnSelectedCell'><a href='index.php?action=ListEvent&moduleid={$MODULE->id}'>Event</a></td>
 			<td style='width: 10px;'></td>
-			{/if}
 			</td>
 		</tr>
 		</table>
@@ -73,9 +71,8 @@
 			<td class="cellLabel" width='20%'>For Version</td>
 			<td class="cellText" width='30%'>
 			{literal}
-			<select class='small' name='forversion' onchange="if(this.value=='5.1.0'){this.form.isextension.disabled=false;}else{this.form.isextension.checked=false;this.form.isextension.disabled=true;}">{/literal}
-					<option value='5.0.4' {if $MODULE->forversion eq '5.0.4'}selected=true{/if}>5.0.4</option>
-					<option value='5.1.0' {if $MODULE->forversion eq '5.1.0'}selected=true{/if}>5.1.0</option>
+			<select class='small' name='forversion'>{/literal}
+					<option value='5.4.0' selected=true>5.4.0</option>
 				</select>
 			</td>
 		</tr>		
